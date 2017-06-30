@@ -27,7 +27,7 @@
         },
         {
             "taskName": "open",
-            "args": ["run", "open"]
+            "args": ["start", "--", "-o"]
         },
         {
             "taskName": "test",
