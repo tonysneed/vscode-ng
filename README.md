@@ -19,3 +19,5 @@
 
 5. To **debug** _unit tests_, launch tests (`Shift+Cmd+T`) the app and press F5 with the "Launch Chrome with ng test" debug config selected.
 
+6. To end a running task press `Shift+Cmd+X`.
+
