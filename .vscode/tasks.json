@@ -1,38 +1,53 @@
 {
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
-    "version": "0.1.0",
-    "command": "npm",
-    "runner": "terminal",
-    "isShellCommand": true,
-    "showOutput": "always",
-    "suppressTaskName": true,
+    "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "install",
-            "args": ["install"]
+            "label": "lint",
+            "type": "npm",
+            "script": "lint",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": [
+                "$tslint5"
+            ]
         },
         {
-            "taskName": "update",
-            "args": ["update"]
+            "label": "serve",
+            "type": "npm",
+            "script": "start",
+            "presentation": {
+                "reveal": "always"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$tsc"
+            ]
         },
         {
-            "taskName": "build",
-            "args": ["run", "build"],
-            "isBuildCommand": true
+            "label": "test",
+            "type": "npm",
+            "script": "test",
+            "presentation": {
+                "reveal": "always"
+            },
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
         },
         {
-            "taskName": "serve",
-            "args": ["start"]
-        },
-        {
-            "taskName": "open",
-            "args": ["start", "--", "-o"]
-        },
-        {
-            "taskName": "test",
-            "args": ["run", "test"],
-            "isTestCommand": true
+            "label": "open",
+            "type": "npm",
+            "script": "open",
+            "problemMatcher": [
+                "$tsc"
+            ]
         }
     ]
 }

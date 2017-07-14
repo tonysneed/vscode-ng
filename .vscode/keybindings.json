@@ -14,18 +14,6 @@
             "key": "ctrl+shift+g",
             "command": "-workbench.view.scm"
         },
-        // Serve the app
-        {
-            "key": "shift+cmd+s",
-            "command": "workbench.action.tasks.runTask",
-            "args": "serve"
-        },
-        // Open the app
-        {
-            "key": "shift+cmd+o",
-            "command": "workbench.action.tasks.runTask",
-            "args": "open"
-        },
         // Run unit tests
         {
             "key": "shift+cmd+t",
