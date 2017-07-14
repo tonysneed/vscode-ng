@@ -4,17 +4,6 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "lint",
-            "type": "npm",
-            "script": "lint",
-            "presentation": {
-                "reveal": "always"
-            },
-            "problemMatcher": [
-                "$tslint5"
-            ]
-        },
-        {
             "label": "serve",
             "type": "npm",
             "script": "start",
@@ -42,12 +31,33 @@
             }
         },
         {
-            "label": "open",
-            "type": "npm",
-            "script": "open",
+            "taskName": "serve",
+            "type": "shell",
+            "command": "npm start",
             "problemMatcher": [
                 "$tsc"
             ]
+        },
+        {
+            "taskName": "open",
+            "type": "shell",
+            "command": "npm start -- -o",
+            "problemMatcher": [
+                "$tsc"
+            ]
+        },
+        {
+            "taskName": "lint",
+            "type": "shell",
+            "command": "npm run lint",
+            "problemMatcher": [
+                "$tsc"
+            ]
+        },
+        {
+            "taskName": "e2e",
+            "type": "shell",
+            "command": "npm run e2e"
         }
     ]
 }
