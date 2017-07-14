@@ -4,9 +4,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "serve",
+            "label": "build",
             "type": "npm",
-            "script": "start",
+            "script": "build",
             "presentation": {
                 "reveal": "always"
             },
